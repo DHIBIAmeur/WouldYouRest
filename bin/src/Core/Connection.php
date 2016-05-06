@@ -1,7 +1,7 @@
 <?php
 
     namespace Rest\Core;
-    use Rest\Core\Config\IConfig;
+    use Rest\Core\Config\IConfigConnection;
 
     /**
     *
@@ -16,7 +16,7 @@
 
       private function __construct(){
 
-          $conf = IConfig::$database['default'];
+          $conf = IConfigConnection::$database['default'];
 
           try{
                 self::$connection = new \PDO('pgsql:host='.$conf['host'].';

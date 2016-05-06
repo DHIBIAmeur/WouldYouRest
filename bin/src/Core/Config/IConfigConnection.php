@@ -2,7 +2,7 @@
 
     namespace Rest\Core\Config;
 
-    Class IConfig
+    Class IConfigConnection
     {
         public static $database =
           array('default' => array ('dbms' =>'pgsql',
